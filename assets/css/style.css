@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:100,200,300,400,600,600,700|Merriweather:100,200,300,400,600,600,700&display=swap');
+
+/* GENERAL */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+P {
+    font-family: 'Merriweather', sans-serif!important;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Lora', sans-serif!important;
+}
+
+.page-heading{
+    font-size: 50px;
+    text-align: center;
+}
+
+.sctn-colour-white{
+    background-color: #fff;
+}
+
+.sctn-colour-gray{
+    background-color: #ECEEF6;
+}
+
+.blue-bg{
+    background-color: #007EE5;
+}
+
+.width-60{
+    width: 60%;
+}
+
+.blue-font{
+    color: #007EE5;
+}
+
+li{
+    color: #8b8e93;
+}
+
+@media (max-width: 992px) { 
+    .center-align-text-xs-md{
+        text-align: center;
+    }
+}
+
+/* NAVBAR */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.dropdown-item {
+    font-weight: regular;
+    color: #777;
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    width: 280px;
+}
+
+.nabvar-width{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px){
+.nabvar-width{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+}
+.navbar-logo{
+    display: inline-block;
+}
+
+.navbar-menu{
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+}
+
+/* HERO SECTION */
+.hero-section{
+    /* Reference https://codetheweb.blog/2017/12/07/fullscreen-image-hero/ */
+    position: relative;
+
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    /* Background styles */
+    background: url("../images/startup_t20_JYgL6O.jpg"); /* Reference https://www.twenty20.com/photos/8d981427-fd82-49c7-b371-06f2357ca926 */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    font-size: 60px;
+    text-align: center;
+}
+
+.tagline{
+    font-size: 40px;
+}
+
+.accreditation{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/ */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+  }
+
+  .into-text{
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .hero-section{
+        /* Reference https://codetheweb.blog/2017/12/07/fullscreen-image-hero/ */
+        position: relative;
+        display: block;
+        padding-top: 150px;
+    }
+
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5); /*dim the background*/
+      }
+    
+    .accreditation{
+        width: 80%;
+
+    }
+}
+
+/* About */
+.about-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+
+/* SERVICES */
+.services-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lift-effect{
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    min-height:440px;
+}
+
+.lift-effect:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2)!important;
+}
+
+@media only screen and (max-width: 600px){
+    .lift-effect{
+        min-height:auto;
+    }
+}
+
+/* Reference https://bbbootstrap.com/snippets/our-service-section-font-awesome-icons-49354397 */
+.section-title {
+    margin-bottom: 38px
+}
+
+.shadow,
+.subscription-wrapper {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2) !important
+}
+
+.icon-bg-circle {
+    position: relative
+}
+
+.icon-lg {
+    font-size: 50px
+}
+
+.icon-bg-circle::before {
+    z-index: 1;
+    position: relative
+}
+
+.icon-bg-primary::after {
+    background: #062caf !important
+}
+
+.icon-bg-circle::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    bottom: 35px;
+    left: 15px;
+    border-radius: 50%;
+    background: inherit;
+    opacity: .1
+}
+
+@media only screen and (max-width: 1000px){
+    .icon-blue {
+        text-align: center;
+        display: block;
+    }
+
+    .icon-bg-circle::after {
+        left: 45%;
+    }
+}
+
+p,
+.paragraph {
+    font-weight: 400;
+    color: #8b8e93;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif
+}
+
+.icon-blue {
+    color: #007EE5
+}
+
+.icon-bg-blue::after {
+    background: #007EE5
+}
+
+
+/* PROCESS  */
+.process-heading{
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blb i {
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    color: #007EE5;
+}
+
+.blp{
+    min-height: 25px;
+}
+
+#blurb_button{
+    width: 10%;
+}
+
+@media only screen and (max-width: 600px){
+    #blurb_button{
+        width: 80%;
+    }
+}
+
+/* GUARANTEE */
+#guarantee_button{
+    width: 12%;
+}
+
+@media only screen and (max-width: 600px){
+    #guarantee_button{
+        width: 80%;
+    }
+}
+
+/* FOOTER */
+footer{
+    background-color: #ECEEF6;
+}
+
+.footer_hyperlink a{
+    color: inherit;
+}
+
+.footer_hyperlink a:hover{
+    color: black;
+}
+
+/***** Tax Refunds Page ******/
+
+/* Header */
+.header-rent-relief{
+    position: relative;
+
+    /* Background styles */
+    background: url("../images/luxury-australia-living-room-design-lounge-interiors-interiordesign_t20_LAd9Yn.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reference https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/ */
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+/***** Contact Page ******/
+
+/* Header */
+.header-contact{
+    position: relative;
+
+    /* Background styles */
+    background: url("../images/at-sign_t20_6mmVnv.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/ */
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+/* Form */
+.contact-form{
+    background-color: rgba(0,0,0,.2);
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:2%;
+    height: 500px;
+}
+
+.map-container iframe{
+    height:100%;
+    width:100%;
+}
