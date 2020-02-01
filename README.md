@@ -23,51 +23,49 @@ Feature 3 - Display the simplicity of signing up.
 Feature 4 - allows users apply to the service by filling out the contact form
 
 ## Features Left to Implement
-A digital signature is usually needed by tax agents to sign off on documents on the clients behalf
+* A digital signature is usually needed by tax agents to sign off on documents on the clients behalf
+* Get an SSL cert so that clients information will be secure when being submitted
 
 ## Technologies Used
-Bootstrap https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css - this was used as it offers great ease of use and mobile responsiveness
-Fontawesome https://kit.fontawesome.com/6cb8961edb.js - this was used to add icons to the site
-JQuery & Javascript https://code.jquery.com/jquery-3.4.1.slim.min.js & https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js - this was used to add the clickable dropdown menu in the menu bar
-HTML & CSS - Used to develop and design the website.
+* Bootstrap https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css - this was used as it offers great ease of use and mobile responsiveness
+* Fontawesome https://kit.fontawesome.com/6cb8961edb.js - this was used to add icons to the site
+* JQuery & Javascript https://code.jquery.com/jquery-3.4.1.slim.min.js & https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js - this was used to add the * clickable dropdown menu in the menu bar
+* HTML & CSS - Used to develop and design the website.
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
+## Testing
+This website is a fairly static website and there is not much needed in the way of error testing.
 
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Resposiveness
+Use the chrome Inspect tool to evaluate the website at different screen sizes. The website scales correctly for all devices.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Contact Form
+Was informed that the contact form did not need to be functional as we have yet to cover JQeury & Javascript so no error testing here.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+Didn't have any bugs occur but had issues trying to achieve certain results as it seemed like the styles were not being applied. This was generally down to bootstraps styles taking precedence or an inline-style that I had forgotten I added. The were solved using the chrome inspect tool.
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Deployment
+1. Create a new repository called jakejamesreid.github.io
+2. Create a new folder called "Deployment" and clone the new repo using git clone https://github.com/jakejamesreid/jakejamesreid.github.io
+3. Navigate to the directory cd jakejamesreid.github.io
+4. Copy and paste the website file into here
+5. Add all files to staging area git add .
+6. Commit the file git commit -m "Website Deployed"
+7. Push the changes git push -u origin master
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+## Credits
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Content
+All of the text for the services, process and guarantee sections and the text for the tax-refunds-rent-relief page was taken from https://alltaxback.ie/
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+### Media
+The photos used in this site were obtained from https://elements.envato.com/, https://www.twenty20.com/ and https://www.irishtaxrebates.ie/
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+### Inspiration
+The design for the contact form was taken from https://alltaxback.ie/apply-online/
+The design for the blurbs in the services section and the tax-refunds-rent-relief page was taken from https://bbbootstrap.com/snippets/our-service-section-font-awesome-icons-49354397
+The design for the navigation bar was taken from the Whiskey Drop code we done at Code Institute https://github.com/Jakejamesreid/Whiskey-Drop-Bootstrap
+The design for the Hero Section was taken from https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
+The design for the footer was taken from https://mdbootstrap.com/docs/jquery/navigation/footer/
+The design for the guarantee section was taken from https://alltaxback.ie/
