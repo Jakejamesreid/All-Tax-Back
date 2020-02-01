@@ -72,7 +72,7 @@ li{
 }
 
 .dropdown-item {
-    font-weight: regular;
+    font-weight: 500;
     color: #777;
 }
 
@@ -426,4 +426,5 @@ footer{
 .map-container iframe{
     height:100%;
     width:100%;
+    border: none;
 }
